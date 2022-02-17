@@ -27,7 +27,6 @@ class Persona{
     }
 }
 
-console.log(personas)
 //console.log(x)
 
 /*let name1 = prompt ("Ingrese su nombre")
