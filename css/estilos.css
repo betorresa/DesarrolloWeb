@@ -157,11 +157,17 @@ img {
 
 
 .fixContent{
-	max-width: 1200px;
+	max-width: 80%;
 	margin: auto;
 }
+.bodier{
+grid-area:content;
+padding-top: 150px;
+}
+
 #header{
-	position: fixed;
+	position: absolute;
+  display:grid;
 	top: 0;
 	width: 100%;
 	z-index: 100;
@@ -284,4 +290,16 @@ img {
 	min-height: 200px;
 	background-color: #000;
 	color: #fff;
+}
+.inpts:focus{
+  border: 1px transparent;
+
+}
+
+.inpts:focus{
+  border: 1px #99FEFF;
+
+}
+.animate__animated.animate__fadeOutDown{
+  --animate-duration: 2s;
 }

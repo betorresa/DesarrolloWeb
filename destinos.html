@@ -2,6 +2,9 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" 
         rel="stylesheet" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href="css/estilos.css" rel="stylesheet" />
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +12,24 @@
         <title>Document</title>
     </head>
     <body>
-        <div>
-            <div id="left">
+        <div id="header">
+            <div class="fixContent headerMenu">
+                <a href="#" class="headerLogo"><img src="images/coderhouse.png" alt="Coder"></a>
+                <a href="index.html"> <div class="headerNavBar">Menu</div> </a>
+                <a href="destinos.html">
+                    <div class="headerNavBar">Destinos</div>
+                <a>
+                <div class="headerNavBar">¿Quienes somos?</div>
                 <a href="login.html">
-                    <button class="btn-login" >Login</button>
+                    <div class="headerNavBar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                      </svg>
+                    </div>    
                 </a>
             </div>
+        </div>
+        <div class="bodier">
             <div class="btn_left">
                 <div class="dropdown">
                     <button class="dropbtn btn" id="paisesD">Destino</button>

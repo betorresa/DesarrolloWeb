@@ -88,11 +88,14 @@ function getData(){
     let compania = document.getElementById("insti").value
     let correo = name1+"."+surname+"@"+compania+".cl"
     let contenedor = document.createElement("div")
-    let div = document.createElement('div')
+    let documento= document.getElementById('user-inputs')
+    documento.classList.add = (" animate__animated animate__fadeOutDown ")
+    documento.innerHTML=``
     contenedor.innerHTML = `<h3> Nombre: ${name1} ${surname}</h3>
                         <p>  Email: ${correo}</p>
                         <b>  Bienvenido, ya tienes tu cuenta ${compania} establecida </b>`
-    document.body.appendChild(contenedor)
+    documento.className = " animate__fadeInUp"
+    documento.appendChild(contenedor)
     console.log("salio")
 }
 
