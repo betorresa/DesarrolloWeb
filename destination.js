@@ -1,22 +1,61 @@
-const listaPaises = document.getElementById('listaPaises');
-const selectCountry = document.getElementById('paisesD');
-
-selectCountry.addEventListener('click', ()=>{
-    console.log(selectCountry.value)
-    mostrarPaises(paises)
+$(document).ready(function(){
+    console.log("El DOM está listo.")
 })
 
+$("#paisesD");
+
+// const listaPaises = document.getElementById('listaPaises');
+// const selectCountry = document.getElementById('paisesD');
+
+$("#paisesD").ready(function()
+{
+    console.log($("#paisesD").val())
+    mostrarPaises(paises)
+
+}
+)
 mostrarPaises(paises)
 
+// selectCountry.addEventListener('click', ()=>{
+//     console.log(selectCountry.value)
+//     mostrarPaises(paises)
+// })
+
+
+
 function mostrarPaises(array){
-    listaPaises.innerHTML= "";
+    $("#paisesD").html( "<option selected disabled> País </option>")
     array.forEach(country =>{
-        let div = document.createElement('a')
-        div.href = '#'
-        div.innerHTML = `
-                        ${country.pais}
-                              `
-        listaPaises.appendChild(div)
+
+        $("#paisesD").append(`<option>${country.pais}</option>`)
+        
     })
 }
+
+function mostrarCiudades(array){
+    $("#paisesD").change(function(){
+        let paisSelect = $("#paisesD option:selected").text()
+        console.log(paisSelect)
+        
+        array.forEach(country =>{
+            console.log(country.pais)
+            
+            if (country.pais == paisSelect){
+                console.log("hola")
+                $("#ciudadesD").html( "<option selected disabled> ciudad </option>")
+                country.ciudades.forEach(city =>{
+                    $("#ciudadesD").append(`<option>${city}</option>`)
+                })
+                $("#ciudadesD").append(`<option> ${country.pais} </option>`)
+
+        }
+        })
+    
+    console.log("termino")
+    })
+}
+
+mostrarCiudades(paises)
+
+
 

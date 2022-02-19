@@ -3,6 +3,10 @@
 	padding: 0;
 }
 body {background-color: #94B3FD;}
+.bodier{
+  grid-area:content;
+  padding-top: 150px;
+  }
 ul li{
 	display: inline-block;
 	width: 25%;
@@ -157,26 +161,19 @@ img {
 
 
 .fixContent{
-	max-width: 80%;
+	max-width: 1200px;
 	margin: auto;
 }
-.bodier{
-grid-area:content;
-padding-top: 150px;
-}
-
 #header{
-	position: absolute;
-  display:grid;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 100;
 }
 #header .headerMenu{
 	height: 100px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	display: grid;
+  grid-auto-flow: column;
 	align-items: center;
 	background-color: #B983FF;
 	-webkit-border-radius: 0 0 20px 20px;
@@ -228,17 +225,15 @@ padding-top: 150px;
 }
 
 .colContainer{
-  display: flex;
-  flex-direction: row;
-	flex-wrap: wrap;
+  display: grid;
+  grid-auto-flow: column;
 	margin-top: 3rem;
 	padding-bottom: 2rem;
 }
 
 .logContainer{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	display: grid;
+  grid-auto-flow: row;
 	margin-top: 3rem;
 	padding-bottom: 2rem;
   background: #94DAFF;
@@ -248,16 +243,16 @@ padding-top: 150px;
   height: 75%;
 }
 .logContainer .logSbS{
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 30px ;
   border-radius: 6px;
   border-color: #000;
-	width: 75%;
-	padding: 1rem;    
+	padding: 5px;    
 }
 .logContainer .logItem{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-auto-flow: row;
   border-radius: 6px;
   border-color: #000;
 	width: 75%;
@@ -290,16 +285,4 @@ padding-top: 150px;
 	min-height: 200px;
 	background-color: #000;
 	color: #fff;
-}
-.inpts:focus{
-  border: 1px transparent;
-
-}
-
-.inpts:focus{
-  border: 1px #99FEFF;
-
-}
-.animate__animated.animate__fadeOutDown{
-  --animate-duration: 2s;
 }
