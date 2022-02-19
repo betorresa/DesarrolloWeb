@@ -42,11 +42,10 @@ function mostrarCiudades(array){
             
             if (country.pais == paisSelect){
                 console.log("hola")
-                $("#ciudadesD").html( "<option selected disabled> ciudad </option>")
+                $("#ciudadesD").html( "<option selected disabled> Ciudad </option>")
                 country.ciudades.forEach(city =>{
                     $("#ciudadesD").append(`<option>${city}</option>`)
                 })
-                $("#ciudadesD").append(`<option> ${country.pais} </option>`)
 
         }
         })
