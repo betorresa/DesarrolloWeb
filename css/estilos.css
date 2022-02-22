@@ -2,7 +2,23 @@
 	margin: 0;
 	padding: 0;
 }
-body {background-color: #94B3FD;}
+body, html {
+  height: 100%;
+}
+.parallax {
+  /* The image used */
+  background-image: url("../images/figma-main.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .bodier{
   grid-area:content;
   padding-top: 150px;
@@ -44,9 +60,8 @@ ul li{
 }
 
 .btn{
-    width: 360px;
-    height: 80px;
-
+    width: 180px;
+    height: 50px;
     background: #B983FF;
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -290,4 +305,49 @@ img {
 .input-group{
   width:50%; 
 
+}
+.nav-color{
+  background-color:#B983FF;
+  border:none;
+  border-width: 0px;
+  border-color: #fff;
+}
+.colContainer-destiny{
+  width:100%;
+}
+
+.input-group{
+  width:100%;
+}
+
+.unpad-right{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.unpad-left{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.card-img-top{
+  border-radius:6px;
+}
+
+.card-log-back{
+  background-color: #94DAFF;
+  color:#B983FF;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5%;
+}
+
+
+.card-padding{
+  padding-right:4px;
+  padding-left:4px;
+  padding: 4px;
+}
+
+.navbar-right{
+  float:center;
 }

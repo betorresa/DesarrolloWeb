@@ -101,9 +101,12 @@ function getData(){
 
 var el = document.getElementById("formInput")
 if(el){
-    console.log("hola")
     el.addEventListener('click', getData)
 }
+
+
+
+
 
 
 // document.getElementById("myForm").addEventListener('keypress', function(e){ (getData())});
