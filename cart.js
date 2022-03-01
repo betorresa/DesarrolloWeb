@@ -7,3 +7,4 @@ var shoppingCart = (function() {
       this.price = price;
       this.count = count;
     }
+  })  

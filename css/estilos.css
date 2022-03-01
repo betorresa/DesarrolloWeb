@@ -83,7 +83,7 @@ ul li {
   width: 100%;
 }
 
-.btn-login {
+.btn-login, .button--unique {
   width: 120px;
   height: 40px;
   float: right;
@@ -379,5 +379,21 @@ img {
     width: 100%;
     padding: 1rem;
   }
+}
+
+.unique-card {
+  width: 60%;
+  padding-top: 5%;
+  margin: 0 auto;
+  /* Added */
+  float: none;
+  /* Added */
+  margin-bottom: 10px;
+}
+
+.button--unique {
+  background-color: #94b3fd;
+  color: #ddd;
+  width: 180px;
 }
 /*# sourceMappingURL=estilos.css.map */
