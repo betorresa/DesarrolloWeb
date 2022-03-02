@@ -321,5 +321,14 @@ img {
     background-color: $light-blue-color ;
     color: $greyish;
     width: 180px;
+    &:hover{
+        color:white;
+    }
 }
  
+.button--lessmore{
+    @extend .btn-login;
+    width: 50px;
+    height: 50px;
+    border-radius: 0px;
+}
